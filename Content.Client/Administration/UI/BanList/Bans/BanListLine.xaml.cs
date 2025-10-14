@@ -28,6 +28,7 @@ public sealed partial class BanListLine : BoxContainer, IBanListLine<SharedServe
         IdsClicked?.Invoke(this);
     }
 
+    [Obsolete("Controls Should only be removed from UI tree insteasd of beeing disposed")]
     protected override void Dispose(bool disposing)
     {
         base.Dispose(disposing);

@@ -95,6 +95,7 @@ public sealed partial class AdminNotesLinePopup : Popup
         DeleteButton.ModulateSelfOverride = null;
     }
 
+    [Obsolete("Controls Should only be removed from UI tree insteasd of beeing disposed")]
     protected override void Dispose(bool disposing)
     {
         base.Dispose(disposing);
